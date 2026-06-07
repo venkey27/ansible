@@ -1,0 +1,20 @@
+<student>
+    <first_name>Venkey</first_name>
+    <last_name>Reddy</last_name>
+    <dob>1995-12-27</dob>
+    <mobile>+91-9000000000</mobile>
+    <addresses>
+        <Permanent>
+            <street>456 Elm Street</street>
+            <city>Hyderabad</city>
+            <state>Telangana</state>
+            <zip>500002</zip>
+        </Permanent>
+        <Temporary>
+            <street>123 Main Street</street>
+            <city>Hyderabad</city>
+            <state>Telangana</state>
+            <zip>500001</zip>
+        </Temporary>
+    </addresses>
+</student>

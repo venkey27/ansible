@@ -1,0 +1,33 @@
+- first_name: "Venkey"
+  last_name: "Reddy"
+  dob: "1995-12-27"
+  mobile: "+91-9000000000"
+  addresses:
+  - Permanent:
+      street: "456 Elm Street"
+      city: "Hyderabad"
+      state: "Telangana"
+      zip: "500002"
+
+  - Temporary:
+      street: "123 Main Street"
+      city: "Hyderabad"
+      state: "Telangana"
+      zip: "500001"
+
+- first_name: "Venkey"
+  last_name: "Reddy"
+  dob: "1995-12-27"
+  mobile: "+91-9000000000"
+  addresses:
+  - Permanent:
+      street: "456 Elm Street"
+      city: "Hyderabad"
+      state: "Telangana"
+      zip: "500002"
+      
+  - Temporary:
+      street: "123 Main Street"
+      city: "Hyderabad"
+      state: "Telangana"
+      zip: "500001"
