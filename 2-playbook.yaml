@@ -3,3 +3,5 @@
   tasks:
   - name: print HELLO WORLD!
     debug:
+      msg: "HELLO ANSIBLE!"
+      
