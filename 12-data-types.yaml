@@ -1,0 +1,22 @@
+- name: course information
+  hosts: local
+  connection: local
+  vars:
+    course: "Ansible form group_vars" #st
+    duration_in_hrs: 40 #int/number
+    is_live_session: true #boolean value
+    topics: #list 
+    - linux
+    - shell scripting
+    - ansible 
+    more details: #map or dictionary contains key-value pairs
+      months: 2
+      trainer: "jaan"
+      tasks:
+      - name: print information
+        mes: |
+          name: {{ course }}
+          duration: {{ duration_in_hrs }}
+          is_live: {{ is_live_session }}
+          topics: {{ topics }}
+          more_details: {{ more_details }}
