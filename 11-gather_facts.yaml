@@ -1,0 +1,6 @@
+- name: "Gather facts"
+  hosts: frontend
+  tasks:
+    - name: "print gather facts"
+      debug:
+        msg: "{{ ansible_facts }}"

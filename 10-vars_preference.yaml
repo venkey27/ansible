@@ -16,7 +16,8 @@
         msg: "Hello {{ full_name }}!"
 
 
-# vars preference order
+# vars preference order:
+
 #1. command line arguments
 #2. task level variables
 #3. vars_files
