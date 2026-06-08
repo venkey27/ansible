@@ -14,6 +14,7 @@
       trainer: "jaan"
     tasks:
     - name: print information
+      debug:
       mes: |
         name: {{ course }}
         duration: {{ duration_in_hrs }}
