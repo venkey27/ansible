@@ -1,0 +1,16 @@
+- name: "vars preference"
+  hosts: frontend
+  vars: 
+    full_name: "venkat reddy"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: full_name
+    prompt: "Enter your full name"
+    private: false
+  tasks:
+    - name: print vars perference
+      vars:
+        full_name: "siva from task level"
+      debug:
+        msg: "Hello {{ full_name }}!"
