@@ -2,8 +2,8 @@
   hosts: frontend
   vars: 
     full_name: "venkat reddy"
-  vars_files:
-  - course.yaml
+  #ars_files:
+  # course.yaml
   vars_prompt:
   - name: full_name
     prompt: "Enter your full name"
@@ -19,3 +19,4 @@
 # vars preference order
 #1. command line arguments
 #2. task level variables
+#3. vars_files
