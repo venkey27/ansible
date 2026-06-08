@@ -1,0 +1,7 @@
+- name: demo form command line
+  hosts: local
+  connection: local
+  tasks:
+  - name: print name
+    debug:
+      msg: " Hello {{ name }}"
