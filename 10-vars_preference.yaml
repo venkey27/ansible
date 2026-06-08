@@ -4,10 +4,10 @@
     full_name: "venkat reddy"
   #ars_files:
   # course.yaml
-  vars_prompt:
-  - name: full_name
-    prompt: "Enter your full name"
-    private: false
+  # vars_prompt:
+  # - name: full_name
+  #   prompt: "Enter your full name"
+  #   private: false
   tasks:
     - name: print vars perference
       vars:
@@ -20,3 +20,4 @@
 #1. command line arguments
 #2. task level variables
 #3. vars_files
+#4. vars_prompt
