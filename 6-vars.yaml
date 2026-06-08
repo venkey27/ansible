@@ -1,0 +1,9 @@
+- name: demo on vars_files
+  hosts: local
+  connection: local # it will not ask for username and password
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: print variables information
+    debug:
+      msg: " i am learning {{ COURSE }}, my trainer is {{ TRAINER }} and the duration is {{ DURATION }}"
