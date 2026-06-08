@@ -8,6 +8,6 @@
   tasks:
   - name : print information
     vars:
-      course: "devops with AIOPS"
-  - debug:
+      COURSE: "devops with AIOPS"
+    debug:
       msg: " i am learning {{ COURSE }} and i am loving it"
