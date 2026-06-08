@@ -1,7 +1,7 @@
 - name: "vars preference"
   hosts: frontend
-  vars: 
-    full_name: "venkat reddy"
+  # vars: 
+  #   full_name: "venkat reddy from play"
   #ars_files:
   # course.yaml
   # vars_prompt:
@@ -21,3 +21,4 @@
 #2. task level variables
 #3. vars_files
 #4. vars_prompt
+#5. play variables
