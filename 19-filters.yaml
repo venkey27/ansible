@@ -27,4 +27,4 @@
 
   - name: convert to lowercase
     debug:
-      msg: "full name is {{ full_name | lower }}
+      msg: "full name is {{ full_name | lower }}"
