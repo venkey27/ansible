@@ -1,0 +1,11 @@
+- name: demo on loop
+  hosts: local
+  connection: local
+  tasks:
+    - name: loop through a list
+      debug:
+        msg: "Current item is {{ item }}" # item is used to reference the current item in the loop
+      loop:
+        - apple
+        - banana
+        - cherry
