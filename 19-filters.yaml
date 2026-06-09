@@ -4,27 +4,32 @@
   vars:
     topics: linux, shell, ansible, terraform
     full_name: sam jam
-    tagmap:
+    tagmap:                           #tagmap is a dictionary containing various tags
       name: ansible
       project: ansible-project
       environment: dev
+      ip_address: 192.168.1.100
   tasks:
   - name: convert string to list
     debug:
-      msg: "topics are {{ topics | split(',') }}"
+      msg: "topics are {{ topics | split(',') }}"  # split the string into a list
 
   - name: convert map to list
     debug:
-      msg: "{{ tagmap | dict2items }}"
+      msg: "{{ tagmap | dict2items }}"             # dict2items converts a dictionary to a list of key-value pairs
 
   - name: set default value
     debug:
-      msg: "hi {{ greeting | default('Hello') }}"
+      msg: "hi {{ greeting | default('Hello') }}"   # set a default value if the variable is not defined
       
   - name: convert to uppercase
     debug:
-      msg: "full name is {{ full_name | upper }}"
+      msg: "full name is {{ full_name | upper }}"  # upper convert the full name to uppercase
 
   - name: convert to lowercase
     debug:
-      msg: "full name is {{ full_name | lower }}"
+      msg: "full name is {{ full_name | lower }}"  # lower convert the full name to lowercase
+      
+  - name: check ip address
+    debug:
+      msg: "{{ip_address | ansible.utils.ipv4}}"  # ansible.utils.ipv4 checks if the IP address is valid
