@@ -3,7 +3,19 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+    tagmap:
+      name: ansible
+      project: ansible-project
+      environment: dev
   tasks:
   - name: convert string to list
     debug:
       msg: "topics are {{ topics | split(',') }}"
+
+  - name: convert map to list
+    debug:
+      msg: "tagmap is {{ tagmap | dict2items }}"
+
+  - name: set default value
+    debug:
+      msg: "hi {{ greeting | default('Hello') }}"
