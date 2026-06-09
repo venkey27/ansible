@@ -12,7 +12,7 @@
     more_details: #map or dictionary contains key-value pairs
       months: 2
       trainer: "jaan"
-    tasks:
+  tasks:
     - name: print information
       debug:
       msg: |
