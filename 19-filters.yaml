@@ -14,8 +14,9 @@
 
   - name: convert map to list
     debug:
-      msg: "tagmap is {{ tagmap | dict2items }}"
+      msg: "{{ tagmap | dict2items }}"
 
   - name: set default value
     debug:
       msg: "hi {{ greeting | default('Hello') }}"
+      
