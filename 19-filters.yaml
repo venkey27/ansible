@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+    full_name: sam jam
     tagmap:
       name: ansible
       project: ansible-project
@@ -20,3 +21,10 @@
     debug:
       msg: "hi {{ greeting | default('Hello') }}"
       
+  - name: convert to uppercase
+    debug:
+      msg: "full name is {{ full_name | upper }}"
+
+  - name: convert to lowercase
+    debug:
+      msg: "full name is {{ full_name | lower }}
