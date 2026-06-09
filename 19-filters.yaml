@@ -32,4 +32,4 @@
       
   - name: check ip address
     debug:
-      msg: "{{ip_address | ansible.utils.ipv4}}"  # ansible.utils.ipv4 checks if the IP address is valid
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"  # ansible.utils.ipv4 checks if the IP address is valid
