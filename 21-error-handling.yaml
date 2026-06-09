@@ -3,17 +3,16 @@
   connection: local
   become: yes
   tasks:
-    - name: check roboshop user exists or not
+  - name: check roboshop user exists or not
       command: id roboshop
       ignore_errors: yes # ignore errors: yes means that the task will continue even if the command fails
-      register: roboshop_user_output
+      register: user_output
 
-
-    - name: print roboshop user output
+    - name: print user output
       debug:
-        msg: "{{ roboshop_user_output }}"
+        msg: "{{ user_output }}"
 
     - name: create roboshop user
       command: useradd roboshop
-      when: roboshop_user_output.rc != 0 #rc is the return code of the command
-      
+      when: user_output.rc != 0 #rc is the return code of the command
+        
