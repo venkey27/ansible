@@ -4,5 +4,9 @@
   tasks:
     - name: command test
       #command: cat /etc/passwd | grep root
-      shell: cat /etc/passwd | grep root
-      
+      shell: cat /etc/passwd | grep root # use shell to execute the command, # grep is used to filter the output
+      register: users_output             # users_output will contain the result of the shell command # register is used to capture the output in a variable
+
+    - name: display output
+      debug:
+        msg: "{{ users_output }}"
