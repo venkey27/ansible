@@ -2,7 +2,7 @@
   hosts: frontend
   # vars: 
   #   full_name: "venkat reddy from play"
-  #ars_files:
+  #vars_files:
   # course.yaml
   # vars_prompt:
   # - name: full_name
