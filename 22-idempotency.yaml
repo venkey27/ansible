@@ -1,0 +1,9 @@
+- name: create user
+  become: yes
+  hosts: local
+  connection: local 
+  tasks:
+  - name: create expense user
+    user:
+      name: expense # name of the user to be created, expense is the name of the user
+      #state:  present # state: present means that the user will be created if it does not exist, or updated if it does exist
