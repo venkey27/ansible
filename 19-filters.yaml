@@ -8,7 +8,7 @@
       name: ansible
       project: ansible-project
       environment: dev
-      ip_address: 192.168.1.100
+      ip_address: 54.234.217.245
   tasks:
   - name: convert string to list
     debug:
