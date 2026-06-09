@@ -4,11 +4,12 @@
   vars:
     topics: linux, shell, ansible, terraform
     full_name: sam jam
+    ip_address: 54.234.217.245
     tagmap:                           #tagmap is a dictionary containing various tags
       name: ansible
       project: ansible-project
       environment: dev
-      ip_address: 54.234.217.245
+      
   tasks:
   - name: convert string to list
     debug:
